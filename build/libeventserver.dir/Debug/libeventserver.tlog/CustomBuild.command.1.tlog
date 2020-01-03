@@ -1,0 +1,10 @@
+^E:\CODE\C++\LIBEVENT_SERVER\LIBEVENT_SERVER\CMAKELISTS.TXT
+setlocal
+D:\cmake\bin\cmake.exe -SE:/code/C++/libevent_server/libevent_server -BE:/code/C++/libevent_server/libevent_server/build --check-stamp-file E:/code/C++/libevent_server/libevent_server/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
